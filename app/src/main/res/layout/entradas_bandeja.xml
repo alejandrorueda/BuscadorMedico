@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/colorfondo"
+   >
+
+    <TextView
+        android:id="@+id/fechaaa"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:text="Fecha"
+        android:contentDescription="Descripción del contenido de la imagen"
+        android:src="@android:drawable/ic_menu_gallery" />
+
+
+    <LinearLayout
+        android:id="@+id/jaja"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+     >
+
+        <TextView
+            android:id="@+id/destinatario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Destinatario"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/asunto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asunto"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

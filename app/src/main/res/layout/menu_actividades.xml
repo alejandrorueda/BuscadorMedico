@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Base.TextAppearance.AppCompat.Inverse"
+    android:weightSum="1"
+    android:background="#ffbfcaff">
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation ="horizontal"
+        android:width="150dp">
+        <TextView android:id="@+id/error"
+            android:layout_width="192dp" android:layout_height="35dp"
+            android:width="150dp"
+            android:background="#ffe9e8ff" />
+        <TextView android:id="@+id/error2"
+            android:layout_width="match_parent" android:layout_height="35dp"
+            android:width="10dp"
+            android:background="#ffe9e8ff"
+            android:textColor="#ff30c500" />
+    </LinearLayout>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="50dp" android:stretchColumns="1">
+
+
+
+     <TableRow>
+
+    <Button
+        android:layout_width="143dp"
+        android:layout_height="112dp"
+        android:text="Perfil"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+
+        android:background="@drawable/ovalado" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="112dp"
+        android:text="Realizar busqueda"
+        android:id="@+id/busqueda"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.20"
+
+        android:background="@drawable/ovalado"
+        android:textAlignment="2"
+        android:singleLine="false" />
+     </TableRow>
+
+        <TableRow>
+        <Button
+        android:layout_width="143dp"
+        android:layout_height="112dp"
+        android:text="New Button"
+        android:id="@+id/button3"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.23"
+       />
+
+    <Button
+        android:layout_width="143dp"
+        android:layout_height="112dp"
+        android:text="Mensajes"
+        android:id="@+id/mensajes"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.28"
+     />
+        </TableRow>
+
+    </TableLayout>>
+
+
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- Contenido principal -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/texto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <!-- Navigation Drawer -->
+
+        <ListView
+            android:id="@+id/drawer"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:background="#EEE" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+
+

@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center_horizontal"
+    android:orientation="vertical" android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" tools:context=".LoginActivity"
+    android:id="@+id/KJ"
+    android:background="#ffd7f8ff"
+    android:baselineAligned="false">
+
+    <!-- Login progress -->
+    <ProgressBar android:id="@+id/login_progress" style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp" android:visibility="gone" />
+
+    <ScrollView android:id="@+id/login_form" android:layout_width="match_parent"
+        android:layout_height="173dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout android:id="@+id/plus_sign_out_buttons"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:visibility="gone" android:weightSum="2">
+
+                <Button android:id="@+id/plus_sign_out_button" style="?android:textAppearanceSmall"
+                    android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:layout_weight="1" android:text="Desconectar" />
+
+                <Button android:id="@+id/plus_disconnect_button"
+                    style="?android:textAppearanceSmall" android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:layout_weight="1"
+                    android:text="Conectar" />
+
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/email_login_form" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="vertical">
+
+                <AutoCompleteTextView android:id="@+id/correo" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="Usuario"
+                    android:inputType="textEmailAddress" android:maxLines="1"
+                    android:singleLine="true" />
+
+                <EditText android:id="@+id/password1" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:hint="Contraseña"
+                    android:imeActionId="@+id/login"
+                    android:imeOptions="actionUnspecified" android:inputType="textPassword"
+                    android:maxLines="1" android:singleLine="true"
+                    android:textIsSelectable="false" />
+
+                <Button android:id="@+id/conectarB"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp" android:text="Conectar"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:text="Registrarse"
+        android:id="@+id/registro"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/darker_gray"
+        android:backgroundTintMode="screen"
+        android:backgroundTint="#ff2cffc7" />
+
+    <TextView
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/mensaje"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
+
+
+

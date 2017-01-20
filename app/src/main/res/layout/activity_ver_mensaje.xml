@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <TableLayout android:id="@+id/TableLayout01"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_marginTop="50dp">
+
+
+        <TableRow android:id="@+id/TableRow05">
+            <TextView android:id="@+id/destinatario2" android:text="De:" />
+            <EditText android:id="@+id/destinatario" />
+        </TableRow>
+        <TableRow android:id="@+id/TableRow06">
+            <TextView android:id="@+id/asunto2" android:text="Asunto:" />
+            <EditText android:id="@+id/asunto" android:layout_width="250dp"
+                android:layout_height="40dp"/>
+        </TableRow>
+    </TableLayout>
+
+
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_marginTop="150dp"
+
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/mensaje"
+            android:layout_width="366dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#ffc2c2c5"
+            android:textColor="#ff000000"
+
+            android:layout_weight="0.66" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/texto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Responder"
+            android:id="@+id/enviar"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="#ff5dc5c4" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Borrar"
+            android:id="@+id/borrar"
+            android:background="#ff5dc5c4"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <!-- Navigation Drawer -->
+
+    <ListView
+        android:id="@+id/drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#EEE" />
+</android.support.v4.widget.DrawerLayout>
